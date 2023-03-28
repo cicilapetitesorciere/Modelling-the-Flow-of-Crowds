@@ -1,0 +1,59 @@
+% do NOT change these next two lines
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% Edit this to represent your group members, title, and date
+\author{Jane Doe, Jean le Rond d'Alembert, Emmy Noether}
+\date{\today}
+\title{A Proof of the Smoothness of Solutions to the Navier-Stokes 
+Equations}
+
+% Environments for theorems/definitions/lemmas/examples if needed
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+
+% package for making dummy, filler text (can delete if you want)
+\usepackage{lipsum}
+
+\begin{document}
+\maketitle
+
+%% None of the text below is strictly needed. Included just to illustrate
+
+\lipsum[1]
+
+\begin{definition}[Definition of Definition]
+An example of how definitions can be made. \label{myDefinition}
+\end{definition}
+
+\lipsum[1]
+
+\begin{example}
+The approach for examples, lemmas, theorems is similar.\label{myExample}
+\end{example}
+
+\LaTeX~even lets you reference Definition~\ref{myDefinition} and 
+Example~\ref{myExample} in a way that is adaptive to any re-ordering you 
+make.
+
+
+You can include your bibliography/works-cited in any format you desire, 
+here's an example using in-line BibTeX (this is fine for a short report, if 
+you plan on using \LaTeX~extensively in the future, it's worthwhile to learn 
+how to correctly utilize \texttt{.bib} files). This (also) lets you 
+reference bibliography items by keyword and not have to worry about the 
+order changing (adding a citation causing reference 2 to become reference 3 
+etc. is handled by the \TeX~engine, \cite{texbook}).
+
+\begin{thebibliography}{9}
+\bibitem{texbook}
+Donald E. Knuth (1986) \emph{The \TeX{} Book}, Addison-Wesley Professional.
+
+\bibitem{lamport94}
+Leslie Lamport (1994) \emph{\LaTeX: a document preparation system}, Addison
+Wesley, Massachusetts, 2nd ed.
+\end{thebibliography}
+
+\end{document}
